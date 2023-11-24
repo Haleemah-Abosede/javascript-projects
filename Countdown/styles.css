@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --lemon: #c5ee4f;
+  --light-green: #bae4ac;
+  --dark-green: #56704c;
+  --background-color: #1a1a1a;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--light-green);
+  max-width: 1440px;
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.5em;
+  padding: 0.3em;
+}
+
+.output {
+  background-color: var(--dark-green);
+  color: var(--light-green);
+  padding: 2em;
+  border-radius: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  width: 100%;
+  font-size: 1.3em;
+}
+
+span {
+  color: var(--lemon);
+  font-weight: 800;
+  text-transform: uppercase;
+}

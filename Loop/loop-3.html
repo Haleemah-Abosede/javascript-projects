@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops: Task 1</title>
+
+    <style>
+      body {
+        background-color: rgb(224, 134, 224);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100svh;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      p:first {
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="preview"></section>
+  </body>
+  <script>
+    let i = 500;
+    const para = document.createElement("p");
+
+    function isPrime(num) {
+      for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+          return false;
+        }
+      }
+
+      return true;
+    }
+
+    // Add your code here
+
+    // Don't edit the code below here!
+    const section = document.querySelector("section");
+    section.appendChild(para);
+  </script>
+</html>

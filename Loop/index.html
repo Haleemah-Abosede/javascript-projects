@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loops: Task 1</title>
+
+   <style>
+      body{
+       background-color: rgb(224, 134, 224);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        width: 100%;
+        height: 100svh;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      li{
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 700;
+      }
+    </style>
+</head>
+<body>
+    <section class="preview"></section>
+  </body>
+  <script>
+    const myArray = ["tomatoes", "chick peas", "onions", "rice", "black beans"];
+    const list = document.createElement("ul");
+
+    // Add your code here
+    for(const food of myArray){
+        const items = document.createElement("li")
+        items.textContent = food
+        list.appendChild(items)
+    }
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector("section");
+    section.appendChild(list);
+  </script>
+</body>
+</html>
+
