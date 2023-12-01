@@ -9,17 +9,18 @@
   --lemon: #c5ee4f;
   --light-green: #bae4ac;
   --dark-green: #56704c;
-  --background-color: #1a1a1a;
+  --black: #1a1a1a;
 }
 body {
-  background-color: var(--background-color);
-  color: var(--light-green);
+  background-color: var(--light-green);
+  color: var(--dark-green);
   max-width: 1440px;
   width: 100%;
   height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 h1 {
   font-size: 2.2em;
@@ -28,7 +29,7 @@ h1 {
 }
 
 .output {
-  background-color: var(--dark-green);
+  background-color: var(--black);
   color: var(--light-green);
   padding: 2em;
   border-radius: 2em;
@@ -37,6 +38,8 @@ h1 {
   gap: 2em;
   width: 100%;
   font-size: 1.3em;
+  font-weight: 800;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 span {
